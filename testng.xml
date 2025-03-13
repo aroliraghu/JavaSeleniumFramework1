@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!-- Below Tags- Listeners and Listener is added additionlally that will handle TC rerun and screenshots capture -->
+    <listeners>
+    <listener class-name="utils.SuiteListener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/aroli/IdeaProjects/SeleniumProjectOne/src/test/java/qa/tests/TestSuite1.java">
+        <!-- Below Tag- Parameter is added to pass the browser parameter value -->
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="qa.tests.TestSuite1">
+                <methods>
+                    <include name="testCase1"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
